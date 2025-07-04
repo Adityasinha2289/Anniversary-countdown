@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Reminder ❤️</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="title">Our Anniversary Countdown</h1>
+            <div class="heart-decoration">💕</div>
+        </header>
+
+        <!-- Countdown Timer Section -->
+        <section class="countdown-section">
+            <div class="countdown-container" id="countdownContainer">
+                <div class="countdown-card">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-card">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-card">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-card">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+            
+            <!-- Completion Message (Hidden by default) -->
+            <div class="completion-message hidden" id="completionMessage">
+                <h2>Happy Anniversary! 🎉 Here's to us!</h2>
+            </div>
+        </section>
+
+        <!-- Personalized Message Section -->
+        <section class="message-section">
+            <p class="romantic-message">Every second brings me closer to our next memory together.</p>
+        </section>
+
+        <!-- Send Hug Button Section -->
+        <section class="hug-section">
+            <button class="hug-button" id="hugButton">
+                Send Yourself a Hug 🤗
+            </button>
+            
+            <!-- Confetti Container -->
+            <div class="confetti-container" id="confettiContainer"></div>
+        </section>
+
+        <!-- Return Message Section -->
+        <section class="return-message-section">
+            <div class="message-card">
+                <h3>Message for Your Future Self</h3>
+                <div class="form-group">
+                    <textarea 
+                        class="message-textarea" 
+                        id="messageTextarea" 
+                        placeholder="Write a message for your future self..."
+                        rows="4"
+                    ></textarea>
+                </div>
+                <div class="button-group">
+                    <button class="save-button" id="saveButton">
+                        Save Message 💌
+                    </button>
+                    <div class="success-indicator hidden" id="successIndicator">
+                        <span class="checkmark">✓</span>
+                        <span>Message saved!</span>
+                    </div>
+                </div>
+                
+                <!-- Saved Message Display -->
+                <div class="saved-message hidden" id="savedMessageDisplay">
+                    <h4>Your Saved Message:</h4>
+                    <div class="saved-text" id="savedText"></div>
+                    <button class="clear-button" id="clearButton">Clear Message</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with 💖 By Aditya Mishra</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
